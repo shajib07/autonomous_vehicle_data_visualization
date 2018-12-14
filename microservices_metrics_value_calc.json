@@ -1,0 +1,55 @@
+{
+    "renderer": "global",
+    "name": "edge",
+    "nodes": [
+    {
+        "renderer": "region",
+        "name": "INTERNET",
+        "displayName": "INTERNET",
+        "nodes": [],
+        "metadata":
+        {},
+        "class": "normal",
+        "connections": []
+    },
+    {
+        "renderer": "region",
+        "name": "us-east-1",
+        "displayName": "US-EAST-1",
+        "updated": 1477690448572,
+        "nodes": [
+        {
+            "name": "buglers",
+            "renderer": "focusedChild"
+        },
+        {
+            "name": "INTERNET",
+            "renderer": "focusedChild"
+        }],
+        "connections": [
+        {
+            "source": "INTERNET",
+            "target": "buglers",
+            "metrics":
+            {
+                "danger": 3000.094,
+                "normal": 300.946000000002, 
+                "warning": 1500.006
+            }
+        }],
+        "class": "normal"
+    }],
+    "serverUpdateTime": 1477691777441,
+    "connections": [
+    {
+        "source": "INTERNET",
+        "target": "us-east-1",
+        "metrics":
+        {
+            "danger": 300.71200000000002,
+            "normal": 3000.416,
+            "warning": 1500.10200000000000001
+        },
+        "class": "normal"
+    }]
+}
